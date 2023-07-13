@@ -26,7 +26,7 @@
 
 .header-delivery-heading {
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 800;
     font-family: 'Poppins';
     margin: 0 auto;
 }
@@ -59,6 +59,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.drop-menu {
+    display: flex;
+    align-items: center;
 }
 
 .drop-menu ul {
@@ -220,7 +225,7 @@ button.btn:hover {
     padding-top: 135px;
     font-size: 50px;
     font-family: 'Cormorant';
-    font-weight: 600;
+    font-weight: 800;
 }
 
 .header-banner-subheading {
@@ -235,9 +240,12 @@ button.btn:hover {
     height: 45px;
     border: none;
     background: #ff8126;
+    display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    font-family: 'Poppins';
+    font-size: 18px;
     color: #fff;
     border-radius: 5px;
     transition: .5s;
@@ -263,7 +271,7 @@ button.btn:hover {
     text-align: center;
     font-family: 'Cormorant';
     font-size: 40px;
-    font-weight: 900;
+    font-weight: 800;
 }
 
 .main-heading-last {
@@ -327,4 +335,390 @@ button.btn:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.advantages-heading {
+    margin-top: 71px;
+    font-family: 'Cormorant';
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.advantages-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.advantages-card {
+    width: 30%;
+    height: 306px;
+    transition: .5s;
+    will-change: transform;
+    cursor: pointer;
+}
+
+.advantages-card:hover {
+    transform: scale(1.1);
+}
+
+
+.advantages-card-heading {
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 20px;
+    width: 80%;
+    color: #1f1f1f;
+    font-family: 'Cormorant';
+}
+
+.advantages-card-subheading {
+    font-family: 'Poppins';
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 15px;
+    width: 85%;
+}
+
+.about-food-block {
+    margin-top: 152px;
+    display: flex;
+    justify-content: space-between;
+    height: 487px;
+}
+
+.about-food-item {
+    max-width: 50%;
+}
+
+
+.about-food-item h3 {
+    color: #ff8126;
+    font-family: 'Cormorant';
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.about-food-heading {
+    color: #000;
+}
+
+.about-food-subheading {
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 22px;
+}
+
+.about-food-arguments::before {
+    background: #ff8126;
+    color: #fff;
+    border-radius: 50%;
+    padding: 3px 6px 3px 6px;
+    font-size: 15px;
+}
+
+.about-food-arguments-row {
+    margin-top: 40px;
+    font-family: 'Poppins';
+    display: flex;
+    font-size: 16px;
+    line-height: 1.5;
+    transition: .5s;
+    will-change: transform;
+}
+
+.about-food-arguments-row:hover {
+    transform: scale(1.1);
+    cursor:grab;
+}
+
+.next-row {
+    margin-top: 15px;
+}
+
+
+.symbol {
+    background: #ff8126;
+    border-radius: 50%;
+    padding: 2px 6px 2px 6px;
+    color: #fff;
+}
+
+.text {
+    margin: 0 15px;
+}
+
+.food-btn {
+    width: 270px;
+    height: 45px;
+    margin-top: 24px;
+}
+
+.partner-container {
+    padding: 0 0;
+}
+
+
+.partner-info {
+    background: url(../img/partner-bg.png);
+    height: 395px;
+    margin-top: 78px;
+}
+
+.partner-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.partner-info-heading {
+    font-family: 'Cormorant';
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 52px;
+
+}
+
+.partner-info-logo {
+    margin-top: 21px;
+}
+
+.partner-btn {
+    width: 330px;
+    margin-top: 30px;
+}
+
+
+
+.surprise-block-container {
+    margin: 80px auto;
+}
+
+
+.surprise-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-surprise {
+    width: 52%;
+}
+
+.second-surprise {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.surprise-heading h4 {
+    color: #ff8126;
+    font-family: 'Cormorant';
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.surprise-heading-item {
+    color: #000;
+}
+
+.surprise-subheading {
+    margin-top: 20px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.surprise-btn {
+    margin-top: 30px;
+    width: 140px;
+}
+
+.insta-share {
+    margin-top: 86px;
+    text-align: center;
+    font-family: 'Cormorant';
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.insta-share a {
+    color: #ff8126;
+}
+
+
+/* Swiper slider */
+
+.swiper {
+    width: 1170px;
+    height: 300px;
+    margin: 40px auto;
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    width: 156px;
+    height: 156px;
+    margin: 0 25px;
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.3);
+    padding: 15px 15px;
+    object-fit: contain;
+  }
+
+
+  /* arrows */
+
+  .swiper-button-next, .swiper-button-prev {
+    transition: .5s;
+    will-change: transform;
+    color: #b3b3b3;
+    border: 1px solid #b3b3b3;
+    border-radius: 50%;
+    padding: 25px 25px 25px 25px;
+  }
+
+  .swiper-button-next::after, .swiper-button-prev::after {
+    font-size: 20px;
+  }
+
+  .swiper-button-next:hover, .swiper-button-prev:hover {
+    transform: scale(1.1);
+    background: #ff8126;
+    border-radius: 50%;
+    border: 1px solid #ff8126;
+    color: #fff;
+
+  }
+
+  .contact-container {
+    margin: 80px auto;
+}
+
+.contact-banner {
+    background: url(../img/contact-bg.png);
+    height: 260px;
+}
+
+
+
+@media screen and (max-width:480px) {
+
+.header-container {
+    padding: 10px 15px;
+}
+
+.header-delivery-info_row {
+    justify-content: space-;
+}
+
+.header-delivery-heading {
+    font-size: 13px;
+}
+
+.header-navbar-container {
+    padding: 0px 15px;
+}
+     /* Гамбургер иконка */
+.burger-menu {
+	width: 30px;
+	height: 30px;
+	position: fixed;
+    right: 15px;
+    top: 13%;
+	z-index:6;
+	overflow: hidden;
+    cursor: pointer;
+}
+
+.burger-menu span {
+	width: 30px;
+	height: 2px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #ff8126;
+	transition: all 0.5s;
+    cursor: pointer;
+}
+
+.burger-menu span:nth-of-type(2) {
+	top: calc(50% - 5px);
+}
+.burger-menu span:nth-of-type(3) {
+	top: calc(50% + 5px);
+}
+
+/* Меняем гамбургер иконку, когда меню открыто */
+.burger-menu.active span:nth-of-type(1) {
+  display: none;
+}
+.burger-menu.active span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(45deg);  
+}
+.burger-menu.active span:nth-of-type(3) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(-45deg); 
+}
+
+/* Меню, которое будет появляться */
+.drop-menu {
+	position: fixed;
+    z-index: 5;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 15px;
+    background: #000;
+	transform: translateX(-100%);
+	transition: transform 0.5s; 
+    overflow-x: hidden;
+}
+
+.drop-menu.active {
+	transform: translateX(0);
+}
+
+.drop-menu ul {
+    display: block;
+}
+
+.drop-menu li {
+	list-style-type: none;
+    padding: 0px 0px 20px;
+    margin: 20px 10px;
+    border-bottom: 1px solid #e9204f;
+}
+
+.drop-menu a {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.header-banner {
+    background: url(../img/bg-mobile.png);
+}
+
+.main-offer-cards {
+    flex-direction: column;
+}
+
+.main-offer-card {
+    margin: 15px 0;
+}
+
 }
