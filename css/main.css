@@ -466,9 +466,6 @@ button.btn:hover {
     background: url(../img/partner-bg.png);
     height: 395px;
     margin-top: 78px;
-}
-
-.partner-info {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -728,7 +725,7 @@ button.btn:hover {
 @media screen and (max-width:480px) {
 
 .header-container {
-    padding: 10px 15px;
+    padding: 10px 30px;
 }
 
 .header-delivery-info_row {
@@ -747,7 +744,7 @@ button.btn:hover {
 	width: 30px;
 	height: 30px;
 	position: fixed;
-    right: 15px;
+    right: 30px;
     top: 13%;
 	z-index:6;
 	overflow: hidden;
@@ -825,12 +822,149 @@ button.btn:hover {
     background: url(../img/bg-mobile.png);
 }
 
+.main-container {
+    width: 100%;
+    padding: 0 30px;
+}
+
+.main-heading h3 {
+    font-size: 36px;
+}
 .main-offer-cards {
     flex-direction: column;
 }
 
 .main-offer-card {
-    margin: 15px 0;
+    margin: 30px 0;
+    max-width: 100%;
+}
+
+.advantages-heading {
+    font-size: 32px;
+}
+
+.advantages-cards {
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.advantages-card {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.about-food-block {
+    flex-direction: column;
+    margin-top: -80px;
+}
+
+.about-food-item {
+    max-width: 100%;
+}
+
+.about-food-item h3 {
+    font-size: 36px;
+}
+
+.about-food-item {
+    margin-top: 80px;
+}
+
+.about-food-item img {
+    max-width: 100%;
+}
+
+.food-btn {
+    margin-top: 80px;
+}
+
+.partner-container {
+    margin-top: 100%;
+}
+
+.partner-info {
+    width: 100%;
+    margin-top: 100%;
+}
+
+.partner-info-heading {
+    font-size: 28px;
+    text-align: center;
+}
+
+.partner-btn {
+    max-width: 250px;
+    font-size: 14px;
+}
+
+.surprise-block-container {
+    padding: 0px 30px;
+}
+
+.surprise-block {
+    flex-direction: column;
+}
+
+.first-surprise {
+    width: 100%;
+}
+
+.first-surprise img {
+    width: 100%;
+}
+
+.second-surprise {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.surprise-heading h4 {
+    font-size: 36px;
+}
+
+.insta-share {
+    font-size: 36px;
+    margin: 86px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper {
+    width: 100%;
+}
+
+.swiper-slide {
+    justify-content: space-between;
+}
+
+.swiper-slide img {
+    width: 100%;
+    margin: 0px 150px;
+}
+
+.contact-banner-heading {
+    font-size: 36px;
+}
+
+
+.contact-item {
+    margin: 0 3px;
+}
+
+.contact-item img {
+    width: 26px;
+    height: 26px;
+}
+
+.parent {
+    display: flex;
+    flex-direction: column;
+}
+
+.div3 {
+    order: 1;
 }
 
 }
