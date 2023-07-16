@@ -17,14 +17,12 @@
   </head>
   <body>
     <header>
-      <div class="header-delivery-info_wrapper">
-        <div class="header-container">
-          <div class="header-delivery-info_row">
+        <div class="header-container delivery-container">
+          <div class="header-delivery-info_row" onclick="this.parentElement.style.display='none';">
             <h6 class="header-delivery-heading">
               Free Delivery over $100. Gift with Purchase over $150
             </h6>
-            <button onclick="close();" class="header-delivery-close" href="#">X</button>
-          </div>
+            <button class="header-delivery-close" href="#">X</button>
         </div>
       </div>
       <div class="header-navbar-container">
@@ -46,9 +44,9 @@
                     Ocassions
                   </button>
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Working From Home</a>
+                    <a class="dropdown-item" href="#">Snack Time</a>
+                    <a class="dropdown-item" href="#">Breakfast</a>
                   </div>
                 </div>
                 <div class="dropdown">
@@ -83,7 +81,7 @@
             </nav>
             <div class="control-nav">
               <div class="control-item">
-                <a href="#">
+                <a href="#popup-search">
                   <img src="img/loupe 1.svg" alt="" /></a>
               </div>
               <div class="control-item">
@@ -462,6 +460,18 @@
           <div class="popup-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Itaque ipsam rerum nam incidunt atque odit eum suscipit, dolore repellendus hic 
             inventore repudiandae, non labore facere ab magni natus nesciunt dolorem.</div>
+        </div>
+      </div>
+    </div>
+    <div id="popup-search" class="popup">
+      <div class="popup-body popup-search-body">
+        <div class="popup-content popup-search-content">
+          <a href="#header" class="popup-close">X</a>
+          <div class="popup-title popup-search-title">Search Window</div>
+          <div class="search-row">
+          <input class="search-place" type="text" name="placeholder">
+          <input class="search-btn" type="button" name="submit" value="Search">
+          </div>
         </div>
       </div>
     </div>
