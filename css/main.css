@@ -68,9 +68,10 @@ button.header-delivery-close:focus {
   justify-content: space-between;
 }
 
-.drop-menu ul {
+.drop-menu nav ul {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .drop-menu li {
   list-style-type: none;
@@ -89,8 +90,9 @@ button.header-delivery-close:focus {
   color: #d3d3d3;
 }
 
-li.nav-drop-item a {
+.nav-drop-item {
 font-size: 15px;
+margin: 0 20px;
 }
 
 button.btn {
@@ -979,8 +981,9 @@ input.counter-value {
 	transform: translateX(0);
 }
 
-.drop-menu ul {
+.drop-menu nav ul {
     display: block;
+    flex-direction: column;
 }
 
 .drop-menu li {
@@ -1008,8 +1011,16 @@ input.counter-value {
 
 .dropdown-toggle {
   color: #000;
+  margin: 10px 0;
 }
 
+a.nav-drop-item {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  font-family: 'Poppins';
+  font-size: 15px;
+}
 
 .close:focus, .close:hover {
   opacity: 1;
