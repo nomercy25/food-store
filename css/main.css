@@ -68,32 +68,29 @@ button.header-delivery-close:focus {
   justify-content: space-between;
 }
 
-.drop-menu {
-  display: flex;
-  align-items: center;
-}
-
 .drop-menu ul {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin: 0 50px;
 }
 .drop-menu li {
   list-style-type: none;
-  margin: 0px 25px;
-  font-family: "Poppins";
+  margin: 0 20px;
   will-change: transform;
-  transition: 0.5s;
+  transition: .5s;
 }
 
-.drop-menu li:hover {
-  transform: scale(1.1);
-}
-
-.drop-menu li a {
-  font-size: 15px;
+.drop-menu a {
+  text-decoration: none;
+  color: #fff;
   font-weight: 600;
+}
+
+.drop-menu a:hover {
+  color: #d3d3d3;
+}
+
+li.nav-drop-item a {
+font-size: 15px;
 }
 
 button.btn {
@@ -254,6 +251,11 @@ button.btn:hover {
   border-radius: 5px;
   transition: 0.5s;
   will-change: transform;
+}
+
+.banner-btn a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .banner-btn:focus {
@@ -814,13 +816,13 @@ button.btn:hover {
 input.search-place {
   border-radius: 5px;
   padding: 0px 10px;
-  width: 100%;
-  height: 30px;
+  width: 200px;
+  height: 40px;
   border: 1px solid #333;
 }
 
 input.search-place:focus {
-  outline: 1px solid #ff8126;
+  outline: 2px solid #ff8126;
   border: none;
   font-family: "Poppins";
 }
@@ -830,29 +832,77 @@ input.search-place:focus {
 }
 
 .search-btn {
-  background: #333;
+  background: #ff8126;
   border-radius: 5px;
+  border: 1px solid #ff8126;
+  cursor: pointer;
+  font-weight: 600;
+  color: #fff;
   width: 100px;
+  height: 40px;
 }
 
 .popup-close {
   position: absolute;
   right: 10px;
   top: 10px;
-  font-size: 20px;
+  font-size: 30px;
   text-decoration: none;
   color: #000;
+  will-change: transform;
+  transition: .5s;
 }
+
 
 .popup-close:hover {
   text-decoration: none;
-  color: #000;
+  transform: scale(1.1);
+  color: #ff8126;
 }
 .popup-title {
   font-size: 40px;
+  text-align: center;
   margin: 0px 0px 1em 0px;
 }
-.popup-text {
+
+.popup-card { 
+  margin: 40px auto;
+}
+
+.counter {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.counter-btn {
+  border-radius: 30px;
+  background: #ff8126;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #ff8126;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.counter-btn:focus {
+  outline: none;
+  border: none;
+}
+
+.counter-btn:active {
+  background: #000;
+  color: #c2e8ce;
+}
+
+input.counter-value {
+  width: 100px;
+  height: 40px;
+  padding: 0 5px;
 }
 
 @media screen and (max-width: 480px) {
@@ -868,83 +918,102 @@ input.search-place:focus {
     padding: 0px 15px;
   }
   /* Гамбургер иконка */
-  .burger-menu {
-    width: 30px;
-    height: 30px;
-    position: fixed;
+.burger-menu {
+	width: 30px;
+	height: 30px;
+	position: fixed;
+    top: 50px;
     right: 30px;
-    top: 13%;
-    z-index: 6;
-    overflow: hidden;
-    cursor: pointer;
-  }
+	z-index:6;
+	overflow: hidden;
+}
 
-  .burger-menu span {
-    width: 30px;
-    height: 2px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #ff8126;
-    transition: all 0.5s;
-    cursor: pointer;
-  }
+.burger-menu span {
+	width: 30px;
+	height: 2px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #ff8126;
+	transition: all 0.5s;
+}
 
-  .burger-menu span:nth-of-type(2) {
-    top: calc(50% - 5px);
-  }
-  .burger-menu span:nth-of-type(3) {
-    top: calc(50% + 5px);
-  }
+.burger-menu span:nth-of-type(2) {
+	top: calc(50% - 5px);
+}
+.burger-menu span:nth-of-type(3) {
+	top: calc(50% + 5px);
+}
 
-  /* Меняем гамбургер иконку, когда меню открыто */
-  .burger-menu.active span:nth-of-type(1) {
-    display: none;
-  }
-  .burger-menu.active span:nth-of-type(2) {
-    top: 50%;
-    transform: translate(-50%, 0%) rotate(45deg);
-  }
-  .burger-menu.active span:nth-of-type(3) {
-    top: 50%;
-    transform: translate(-50%, 0%) rotate(-45deg);
-  }
+/* Меняем гамбургер иконку, когда меню открыто */
+.burger-menu.active span:nth-of-type(1) {
+  display: none;
+}
+.burger-menu.active span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(45deg);  
+}
+.burger-menu.active span:nth-of-type(3) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(-45deg); 
+}
 
-  /* Меню, которое будет появляться */
-  .drop-menu {
-    position: fixed;
+/* Меню, которое будет появляться */
+.drop-menu {
+	position: fixed;
     z-index: 5;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 15px;
-    background: #000;
-    transform: translateX(-100%);
-    transition: transform 0.5s;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 15px;
+    background: #c2e8ce;
+    opacity: 1;
+	transform: translateX(-100%);
+	transition: transform 0.5s; 
     overflow-x: hidden;
-  }
+}
 
-  .drop-menu.active {
-    transform: translateX(0);
-  }
+.drop-menu.active {
+	transform: translateX(0);
+}
 
-  .drop-menu ul {
+.drop-menu ul {
     display: block;
-  }
+}
 
-  .drop-menu li {
-    list-style-type: none;
+.drop-menu li {
+	list-style-type: none;
     padding: 0px 0px 20px;
     margin: 20px 10px;
-    border-bottom: 1px solid #e9204f;
-  }
+}
 
-  .drop-menu a {
+.drop-menu a {
     font-size: 20px;
-    text-transform: uppercase;
-  }
+    color: #000;
+    font-size: 16px;
+}
+
+.dropdown {
+  margin: 0px 0;
+  font-family: 'Poppins';
+  color: #ff8126;
+}
+
+.dropdown-menu {
+  background: #fff;
+}
+
+
+.dropdown-toggle {
+  color: #000;
+}
+
+
+.close:focus, .close:hover {
+  opacity: 1;
+}
 
   .header-banner {
     background: url(../img/header-banner.svg);
@@ -959,7 +1028,7 @@ input.search-place:focus {
     padding: 20px 15px;
   }
 
-  .banner-btn {
+  .first-btn {
     margin: 40px 15px;
   }
 
@@ -1107,4 +1176,30 @@ input.search-place:focus {
   .six-footer {
     margin-top: 10px;
   }
+
+  .popup {
+    z-index: 999;
+  }
+
+  .popup-search-content {
+    padding: 20% 15px;
+  }
+
+  .popup-title {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  .popup-card img {
+    width: 100%;
+  }
+
+  .popup-card-btn img {
+    width: 26px;
+    height: 26px;
+    margin: 0 10px;
+
+  }
+
+
 }
